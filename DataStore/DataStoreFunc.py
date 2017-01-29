@@ -29,7 +29,7 @@ def getIds(conditions):
         idList += ret["imageIds"]
         maxId = ret["metaIdMax"]
 
-    return ["http://192.168.1.14/" + str(i) for i in idList]
+    return ["http://192.168.1.14/file/" + str(i) for i in idList]
 
 
 
