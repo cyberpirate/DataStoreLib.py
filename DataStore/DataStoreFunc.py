@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3.4
-import requests
 import json
 import urllib.parse
+import requests
 
 
 def uploadFile(file, mimeType, data):
@@ -29,12 +29,12 @@ def getIds(conditions):
         idList += ret["imageIds"]
         maxId = ret["metaIdMax"]
 
-    return idList
+    return ["http://192.168.1.14/" + str(i) for i in idList]
 
 
 
 
 if __name__ == '__main__':
-    print(len(getIds([
+    print(getIds([
         "comp platform =tinder_profiles"
-    ])))
+    ]))
