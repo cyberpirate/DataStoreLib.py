@@ -8,6 +8,7 @@ Python Library to access the [DataStore API](https://github.com/cyberpirate/Data
     DataStore.uploadFile(file, mimeType, data)
     #returns: True or False
 
-    #conditions: array of conditions to pass to DataStore. Syntax in the DataStore documentation
+    #conditions: array of conditions to pass to DataStore.
+    #   Syntax in the DataStore documentation
     DataStore.getIds(conditions)
     #returns: array of urls to files passing the conditions
